@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle, #001133, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: block;
+  border: 2px solid limegreen;
+  box-shadow: 0 0 25px limegreen;
+}
+
+/* Buttons */
+button {
+  position: absolute;
+  top: 20px;
+  background-color: green;
+  color: white;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #00b300;
+}
+
+.home-btn { left: 20px; }
+.restart-btn { right: 20px; }
