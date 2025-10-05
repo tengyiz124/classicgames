@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sudoku</title>
+  <link rel="stylesheet" href="sudoku.css" />
+</head>
+<body>
+  <button class="home-btn" onclick="window.location.href='../../index.html'">🏠</button>
+  <button class="restart-btn" onclick="location.reload()">🔄</button>
+
+  <header class="game-header">
+    <h1>Sudoku</h1>
+    <p class="sub">Fill the grid — no duplicates in any row, column, or 3×3 box</p>
+  </header>
+
+  <main class="container">
+    <div id="board" class="board" aria-label="Sudoku board"></div>
+
+    <aside class="controls">
+      <div class="note">Select a cell then click a number or press 1–9</div>
+
+      <div class="numpad" id="numpad"></div>
+
+      <div class="actions">
+        <button id="hintBtn">Hint</button>
+        <button id="checkBtn">Check</button>
+        <button id="eraseBtn">Erase</button>
+      </div>
+
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+    </aside>
+  </main>
+
+  <script src="sudoku.js"></script>
+</body>
+</html>
