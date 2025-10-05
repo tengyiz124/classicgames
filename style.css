@@ -1,0 +1,84 @@
+/* Full-page setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0047ab;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+.title {
+  color: limegreen;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  color: limegreen;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Grid for game buttons */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  width: 90%;
+  max-width: 1000px;
+  flex-grow: 1;
+}
+
+.game-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 15px;
+  height: 100px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.game-card:hover {
+  background-color: #00b300;
+  transform: scale(1.08);
+}
+
+/* Footer */
+footer {
+  margin: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .game-card {
+    height: 80px;
+    font-size: 1.1rem;
+  }
+}
