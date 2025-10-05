@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle, #006600 20%, #003300 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.title {
+  color: limegreen;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+  position: absolute;
+  top: 20px;
+  background-color: green;
+  color: white;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #00b300;
+}
+
+.home-btn { left: 20px; }
+.restart-btn { right: 20px; }
+
+/* Game board */
+#game-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  width: 90%;
+  max-width: 900px;
+  margin-bottom: 50px;
+}
+
+/* Cards */
+.card {
+  width: 70px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: grab;
+  user-select: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.card.red {
+  color: red;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
